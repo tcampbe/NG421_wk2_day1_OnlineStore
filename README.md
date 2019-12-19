@@ -27,7 +27,7 @@ https://blackrockdigital.github.io/startbootstrap-shop-homepage/
 * Nothing will show up until you complete this step.
 
 ### Model
-* create an interface for what a product should look like
+* create an interface for what a `product` should look like
 * look at products.ts to get an idea of what properties a product should have and what types
 ```
  {
@@ -42,18 +42,22 @@ https://blackrockdigital.github.io/startbootstrap-shop-homepage/
 ```
 * Use this interface where appropriate
 
+### TypeScript
+* Apply types to appropriate places: argument types, function return types, class property types
+* Import and use the Product interface where needed
+
 ### ProductService
 * Create a new service for `product`
-* Create a property on this class for `shoppingCart` which is an array of Products
-* Create a property on this class for `products` which is an array of Products
+* Create a property on this class for `shoppingCart` which is an Array of Product
+* Create a property on this class for `products` which is an Array of Product
 * Import products from `products.ts` and assign it into the products property
-* Create a method for `getProducts`
-* Create a method for `getShoppingCart`
-* Create a method for `addToCart` that takes a product and pushes it to the shopping cart array
+* Create a method for `getProducts` with return type `Array<Product>`
+* Create a method for `getShoppingCart` with return type `Array<Product>`
+* Create a method for `addToCart` that takes an argument product of type `Product` and pushes it to the shopping cart array
 * Make sure to import the service and add to the providers array in `app.module.ts`. The generator might not do this.
 
 ### app.component.ts
-* Create a property called products
+* Create a property called products of type `Array<Product>`
 * Implement a constructor and `ngOnInit`
 * Implement dependency injection to get the `ProductService` into a property called `productService`
 * In `ngOnInit` call `this.productService.getProducts` and assign it into the `products` property.
@@ -61,7 +65,7 @@ https://blackrockdigital.github.io/startbootstrap-shop-homepage/
 
 ### ProductDetail
 * The ProductDetail should repesent only one single product.
-* The ProductDetail component class should have a property `product` which is an object, and use it to populate price, name, description reviews and stars.
+* The ProductDetail component class should have a property `product` which is an object of type `Product`, and use it to populate price, name, description reviews and stars.
 * Make this property an `@Input()` so that a parent component can send in information.
 * Remove all hard coded information.
 * Make the star images represent the number rating from data.
@@ -69,7 +73,7 @@ https://blackrockdigital.github.io/startbootstrap-shop-homepage/
 
 
 ### Header
-* The Header component should have a property `shoppingCart` that is an array of Products.
+* The Header component should have a property `shoppingCart` that is an array of Product.
 * Implement a constructor and `ngOnInit`.
 * Implement dependency injection to get the `ProductService` into a property called `productService`.
 * In `ngOnInit` call `this.productService.getShoppingCart` and assign it into the `shoppingCart` property.
@@ -90,7 +94,7 @@ https://blackrockdigital.github.io/startbootstrap-shop-homepage/
 * When the button is clicked it should emit the event sending in the product object
 
 ### app.component.ts
-* Add an event handler method called `productWasAdded` that takes one argument, a product
+* Add an event handler method called `productWasAdded` that takes one argument, `product` of type `Product`
 * In this method call `addToCart` on the productService sending in the product.
 
 ### app.component.html 
