@@ -22,7 +22,9 @@ https://blackrockdigital.github.io/startbootstrap-shop-homepage/
 * We should be familiar with this process from a previous project
 
 ### app.component.html 
-* Cut whatever html is left inside the body from index.html and put it in `app.component.html`.
+* Cut out the entire `<div id="root">` div from index.html and put it in `app.component.html`.
+* Make sure not to remove `<app-root></app-root>` from index.html.
+* Nothing will show up until you complete this step.
 
 ### Model
 * create an interface for what a product should look like
