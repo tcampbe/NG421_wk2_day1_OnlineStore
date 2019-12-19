@@ -1,4 +1,4 @@
-#### Intro
+## Intro
 We need to build the front end web app of an ecommerce store. This project is based on an existing website that has no functionality. If you worked for this company, they may ask you to fix their current website that doesn't do anything and make it functional so that people can buy products on it. You might make the decision to use Angular to do this. Converting normal websites to use Angular components is a very common thing to do in the industry.
 
 Our simple site will list out some hard coded products. Is this realistic? Would a small company only sell the same 10 items in a year? A user needs to be able to add a product to their shopping cart by clicking a button. How do you actually code the act of adding a product to the a digital shopping cart? Let's see.
@@ -6,10 +6,10 @@ Our simple site will list out some hard coded products. Is this realistic? Would
 
 https://blackrockdigital.github.io/startbootstrap-shop-homepage/
 
-### Setup
+## Setup
 * Fork, clone, npm i, npm start
 
-# Part 1 - Building Components
+## Part 1 - Building Components
 ### The components
  * Organize this web page into appropriate components
    * ProductDetail
@@ -79,7 +79,7 @@ https://blackrockdigital.github.io/startbootstrap-shop-homepage/
 
 
 
-# Part 2 - Events and Component Comm
+## Part 2 - Events and Component Comm
 
 ### Add Item To Cart
 * Add a button to ProductDetail component "Add To Cart"
