@@ -6,6 +6,8 @@ Our simple site will list out some hard coded products. Is this realistic? Would
 
 https://blackrockdigital.github.io/startbootstrap-shop-homepage/
 
+<img src="421-OnlineStoreGifDemo.gif">
+
 ## Setup
 * Fork, clone, npm i, npm start
 
@@ -68,8 +70,8 @@ https://blackrockdigital.github.io/startbootstrap-shop-homepage/
 * The ProductDetail component class should have a property `product` which is an object of type `Product`, and use it to populate price, name, description reviews and stars.
 * Make this property an `@Input()` so that a parent component can send in information.
 * Remove all hard coded information.
-* Make the star images represent the number rating from data.
-* Bonus. Notice the grey stars.
+* Make the star images represent the number rating from data. (You might have to research how to do this).
+* Bonus. Notice the grey stars. `<span class="glyphicon glyphicon-star-empty"></span>`
 
 
 ### Header
