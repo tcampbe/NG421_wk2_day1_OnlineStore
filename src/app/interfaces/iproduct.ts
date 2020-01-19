@@ -2,8 +2,8 @@ export interface IProduct {
     id: number;
     name: string;
     description: string;
-    reviews: string;
+    reviews: number;
     rating: number;
     imgUrl: string;
-    price: number;
+    price: string;
 }
