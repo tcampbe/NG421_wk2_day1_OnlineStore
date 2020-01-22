@@ -1,6 +1,5 @@
 import { Component, OnInit } from "@angular/core";
 import { IProduct } from "./interfaces/iproduct";
-import products from "./products";
 import { ProductService } from './services/product.service';
 
 @Component({
@@ -16,5 +15,9 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     this.products = this.productService.getproducts();
+  }
+
+  productWasAdded(product: IProduct): void {
+    this.productService.addToCart(product);
   }
 }

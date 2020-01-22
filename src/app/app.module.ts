@@ -1,13 +1,13 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { BrowserModule } from "@angular/platform-browser";
+import { NgModule } from "@angular/core";
 
-import { AppComponent } from './app.component';
-import { ProductDetailComponent } from './product-detail/product-detail.component';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
-import { CarouselComponent } from './carousel/carousel.component';
-import { ProductService } from './services/product.service';
-import { RatingStarsComponent } from './rating-stars/rating-stars.component'
+import { AppComponent } from "./app.component";
+import { ProductDetailComponent } from "./product-detail/product-detail.component";
+import { HeaderComponent } from "./header/header.component";
+import { FooterComponent } from "./footer/footer.component";
+import { CarouselComponent } from "./carousel/carousel.component";
+import { ProductService } from "./services/product.service";
+import { RatingStarsComponent } from "./rating-stars/rating-stars.component";
 
 @NgModule({
   declarations: [
@@ -16,14 +16,10 @@ import { RatingStarsComponent } from './rating-stars/rating-stars.component'
     HeaderComponent,
     FooterComponent,
     CarouselComponent,
-    RatingStarsComponent,
+    RatingStarsComponent
   ],
-  imports: [
-    BrowserModule
-  ],
-  providers: [
-    ProductService
-  ],
+  imports: [BrowserModule],
+  providers: [ProductService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

@@ -6,22 +6,21 @@ import products from "../products";
   providedIn: "root"
 })
 export class ProductService {
-  shoppingCart: IProduct[];
-  Products: IProduct[];
+  shoppingCart: IProduct[] = [];
+  products: IProduct[];
 
   constructor() {
-    this.Products = products;
+    this.products = products;
   }
   getproducts(): IProduct[] {
-    return this.Products;
+    return this.products;
   }
 
   getshoppingcart(): IProduct[] {
     return this.shoppingCart;
   }
 
-  addToCart(products: IProduct): IProduct[] {
+  addToCart(products: IProduct) {
     this.shoppingCart.push(products);
-    return this.shoppingCart;
   }
 }

@@ -34,12 +34,13 @@
             data-toggle="dropdown"
             aria-haspopup="true"
             aria-expanded="false"
-            >Items In Cart {{ shoppingCart.length }}
+          >
+            Items In Cart {{ shoppingCart.length }}
             <span class="caret"></span>
           </a>
           <!--     aria is       Accessible Rich Internet Applications    -->
           <ul class="dropdown-menu">
-            <li ngFor="let product of shoppingCart">
+            <li *ngFor="let product of shoppingCart">
               {{ product.name }}
             </li>
           </ul>
