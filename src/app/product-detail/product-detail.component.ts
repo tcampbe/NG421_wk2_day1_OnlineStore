@@ -11,9 +11,9 @@ export class ProductDetailComponent implements OnInit {
   constructor() {}
 
   @Output() productAdded: EventEmitter<IProduct> = new EventEmitter<IProduct>();
-  ngOnInit() {}
+  ngOnInit(): void {}
 
-  addtocart():void{
+  addtocart(): void {
     this.productAdded.emit(this.product);
   }
 }

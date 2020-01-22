@@ -15,7 +15,7 @@
       </p>
     </div>
     <div class="ratings">
-      <p class="pull-right">{{ product.reviews }}</p>
+      <p class="pull-right">Reviews - {{ product.reviews }}</p>
       <!-- <p class="pull-right">
         {{ product.ratings }}
         <span class="glyphicon glyphicon-star"></span>
@@ -25,6 +25,7 @@
         <span class="glyphicon glyphicon-star-empty"></span>
       </p> -->
       <!--       <app-ratings [rating]="product.rating"></app-ratings>    -->
+    <app-rating-stars [rating]="product.rating"></app-rating-stars>
     </div>
     <button class="btn btn-sm" (click)="addtocart()">ADD to Cart</button>
   </div>
